@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <!-- main -->
+    <div
+      class="main mobile:w-full desktop:w-full flex justify-center items-center flex-col"
+    >
+      <!-- header -->
+      <header
+        class="mobile:w-full mobile:h-[78px] desktop:h-[58px] bg-neutral-600 flex justify-between z-100"
+      >
+        <div class="right flex items-center mr-16 gap-7">
+          <!--mobilemenu -->
+          <button class="menubar cursor-pointer desktop:hidden">
+            <img
+              src="./src/svg/menu.svg"
+              alt="menu"
+              class="menu mobile:w-[45px] mobile:h-[45px]"
+            />
+          </button>
+          <div
+            class="submenu transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[78px] right-[17%] w-[70%]  bg-[#d9d9d9] border-t-4 border-greencolor hidden desktop:hidden"
+          >
+            <ul class="menu text-[#141414] w-full p-6 [&_li>*]:rounded-none font-['iransans']">
+              <li class="h-[50px]"><a src="index.html" class="border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300">صفحه اصلی</a></li>
+              <li class="h-[50px]"><a src="./project.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300">پروژه ها <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
+              <li class="h-[50px]"><a src="honors.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> افتخارات <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
+              <li class="h-[50px]"><a src="missions.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> ماموریت ها <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
+              <li class="h-[50px]"><a src="about.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> درباره ما <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
+              <li class="h-[50px]"><a src="./contactus.html" class="border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> تماس با ما</a></li>
+            </ul>
+          </div>
+          <!-- endmobilemenu -->
+          <img
+            src="./src/svg/search.svg"
+            alt="search"
+            class="search mobile:w-[22px] mobile:h-[22px]"
+          />
+          <!-- desktopmenu -->
+          <div class="item mobile:hidden desktop:flex font-['iransans'] gap-6 text-[#141414]">
+            <a href="index.html" class="hover:opacity-80 hover:text-[#333131]">صفحه اصلی</a>
+            <div class="group font-['iransans']">
+              <a href="project.html" class="hover:text-[#333131] flex items-center gap-1 group">پروژه ها <img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[205px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+              <ul class="menu text-[#141414] w-full px-3 py-1">
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
+            </div>
+          </div>
+            <div class="group font-['iransans']">
+              <a href="honors.html" class="hover:text-[#333131] flex items-center gap-1 group">افتخارات<img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[305px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+              <ul class="menu text-[#141414] w-full px-3 py-1">
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
+            </div>
+          </div>
+            <div class="group font-['iransans']">
+              <a href="missions.html" class="hover:text-[#333131] flex items-center gap-1 group">ماموریت ها <img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[400px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+              <ul class="menu text-[#141414] w-full px-3 py-1">
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 4</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 5</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 6</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 7</a></li>
+            </div>
+          </div>
+           <div class="group font-['iransans']">
+              <a href="about.html" class="hover:text-[#333131] flex items-center gap-1 group"> درباره ما <img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[518px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+              <ul class="menu text-[#141414] w-full px-3 py-1">
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
+            </div>
+          </div>
+            <a href="contactus.html" class="hover:text-[#333131] text-greencolor">تماس با ما</a>
+          </div>
+          <!-- enddesktopmenu -->
+        </div>
+        <div class="left ml-14 flex items-center">
+          <a href="./index.html">
+            <img
+              src="./src/image/menu.png"
+              alt="menu"
+              class="w-[130px] h-[45px]"
+            />
+          </a>
+        </div>
+      </header>
+      <!-- endheader -->
+
+      <!-- footer -->
+       <footer class="w-full flex mobile:h-[830px] desktop:h-[585px] bg-no-repeat bg-transparent mt-20 relative">
+        <div class="footer1 w-full h-[250px] rotate-x-180 absolute top-0 flex justify-center items-center flex-col">
+          <div class="footer2 w-full h-[250px] rotate-x-180 absolute bg-cover opacity-55 right-0">
+          </div>
+          <div class="mobile:w-[70%] mobile:flex-wrap content font-['iransans'] rotate-x-180 flex justify-center items-center desktop:gap-18 mb-32">
+              <div class="h-[110px]">
+                <h2 class="mobile:text-md desktop:text-2xl text-white font-bold py-4"> راه حل ها</h2>
+                <span class="mobile:w-[110px] desktop:w-[165px] h-0.5 bg-white block mb-8"></span>
+                <p class="text-white text-[14px] py-2"> <a href="">پروژه ها</a> </p>
+                <p class="text-white text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white text-[14px] py-2"><a href="">خدمات</a></p>
+                <p class="text-white text-[14px] py-2"> <a href="">محصولات</a></p>
+              </div>
+              <div class="h-[110px] mobile:hidden desktop:block">
+                <h2 class="text-2xl text-white font-bold py-4"> شرکت</h2>
+                <span class="w-[165px] h-0.5 bg-white block mb-8"></span>
+                <p class="text-white mobile:text-[10px] desktop:text-[14px] py-2"> <a href="">پروژه ها</a> </p>
+                <p class="text-white mobile:text-[10px] desktop:text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] desktop:text-[14px] py-2"><a href="">خدمات</a></p>
+                <p class="text-white mobile:text-[10px] desktop:text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] desktop:text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] desktop:text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] desktop:text-[14px] py-2"> <a href="">محصولات</a></p>
+              </div>
+              <div class="h-[110px]">
+                <h2 class="mobile:text-md desktop:text-2xl text-white font-bold py-4"> صفحات مجازی</h2>
+                <span class="mobile:w-[110px] desktop:w-[165px] h-0.5 bg-white block mb-8"></span>
+                <div class="mobile:w-[110px] mobile:h-[35px] desktop:w-[140px] desktop:h-[40px] rounded-md bg-[#0F699B]">
+                <p class="text-white flex pr-1.5"><a href="" class="mobile:text-[10px] desktop:text-[14px] desktop:mt-2 mobile:mt-2.5">ما را دنبال کنید </a>
+                  <a href="" class="bg-[#127BB6] mobile:w-[35px] mobile:h-[35px] desktop:w-[45px] desktop:h-[40px] font-bold text-[16px] pt-2 text-center hover:bg-[#0F699B] mobile:mr-[11px] desktop:mr-[8px] rounded-tl-md rounded-bl-md">in</a>
+                </p>
+                </div>
+              </div>
+              <div class="h-[110px] desktop:hidden mobile:absolute mobile:top-72  mobile:ml-32">
+                <h2 class="mobile:text-md desktop:text-2xl text-white font-bold py-4"> شرکت</h2>
+                <span class="w-[110px] h-0.5 bg-white block mb-8"></span>
+                <p class="text-white mobile:text-[10px] text-[14px] py-2"> <a href="">پروژه ها</a> </p>
+                <p class="text-white mobile:text-[10px] text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] text-[14px] py-2"><a href="">خدمات</a></p>
+                <p class="text-white mobile:text-[10px] text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] text-[14px] py-2"> <a href="">محصولات</a></p>
+                <p class="text-white mobile:text-[10px] text-[14px] py-2"> <a href="">محصولات</a></p>
+              </div>
+            </div>
+        </div>
+       </footer>
+      <!-- endfooter -->
+    </div>
+    <!--endmain  -->
+    <script src="./src/main.js"></script>
+  </body>
+</html>

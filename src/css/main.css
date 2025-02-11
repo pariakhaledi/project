@@ -1,1 +1,29 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --breakpoint-mobile: 340px;
+  --breakpoint-desktop: 1024px;
+  --color-greencolor: #00960c;
+}
+@font-face {
+  font-family: iransans;
+  src: url(../fonts/IRANSansWeb-Light.eot);
+  src: url(../fonts/IRANSansWeb-Light.woff);
+  src: url(../fonts/IRANSansWeb-Light.woff2);
+}
+footer {
+  background-image: linear-gradient(
+    186deg,
+    #2add4b 0%,
+    #00487c 100%
+  ) !important;
+  .footer1 {
+    background-image: url(../svg/footerbackground.svg);
+    background-size: 100% 250px;
+    .footer2 {
+      background-image: url(../image/footerbackground.png);
+      translate: (0px, 100.041px);
+    }
+  }
+}
