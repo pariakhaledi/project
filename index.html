@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
   </head>
   <body>
     <!-- main -->
     <div
-      class="main mobile:w-full desktop:w-full flex justify-center items-center flex-col"
+      class="main w-full flex justify-center items-center flex-col relative bg-white"
     >
       <!-- header -->
       <header
-        class="mobile:w-full mobile:h-[78px] desktop:h-[58px] bg-neutral-600 flex justify-between z-100"
+        class="mobile:w-full mobile:h-[78px] desktop:h-[58px] bg-white/60 flex justify-between z-1000 desktop:fixed mobile:absolute top-0"
       >
         <div class="right flex items-center mr-16 gap-7">
           <!--mobilemenu -->
@@ -25,7 +26,7 @@
             />
           </button>
           <div
-            class="submenu transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[78px] right-[17%] w-[70%]  bg-[#d9d9d9] border-t-4 border-greencolor hidden desktop:hidden"
+            class="submenu transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[78px] right-[17%] w-[70%]  bg-white/70 border-t-4 border-greencolor hidden desktop:hidden"
           >
             <ul class="menu text-[#141414] w-full p-6 [&_li>*]:rounded-none font-['iransans']">
               <li class="h-[50px]"><a src="index.html" class="border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300">صفحه اصلی</a></li>
@@ -100,6 +101,112 @@
         </div>
       </header>
       <!-- endheader -->
+      <!-- slider -->
+       <div class="group slider w-full h-[94vh] flex justify-center relative">
+        <div class="swiper mySwiper ">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide  ">
+        <img src="./src/image/slider/1.jpg" class="h-[94vh] object-cover" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./src/image/slider/2.jpg " class="h-[94vh] object-cover" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./src/image/slider/3.jpg" class="h-[94vh] object-cover"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="./src/image/slider/4.jpg" class="h-[94vh] object-cover" />
+      </div>
+    </div>
+    <div class="swiper-button-next !hidden group-hover:!block"></div>
+    <div class="swiper-button-prev !hidden group-hover:!block"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <button class="btslider text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] absolute bottom-14 z-200 text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+       </div>
+      <!-- endslider -->
+      <!-- master -->
+       <div class="master w-full flex flex-col gap-32 justify-center items-center mt-14 font-['iransans'] ">
+        <div class="latestnews flex flex-col justify-center items-center w-[320px] ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px]">آخرین اخبار</h2>
+          <button class="btnews my-8 text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+         <a href=""> <div class="newsItem flex flex-col justify-center items-center hover:bg-hoverbg">
+            <img src="./src/image/news/1.jpg" alt="" class="newsItemImg w-[210px] h-[150px]">
+            <h3 class="text-[#141414] mb-2 mt-6 font-bold">لورم ایپسوم متن</h3>
+            <p class="text-[#141414] text-center">لورم با  ایپسوم متن ساختگی با <span class="text-[#ff9900]">تولید</span> سادگی نامفهوم از صنعت</p>
+          </div></a>
+        </div>
+        <div class="choosUs flex flex-col justify-center items-center ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px]">چرا ما را انتخاب کنید ؟</h2>
+          <button class="btnews text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-20">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/2.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/3.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/4.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+          </div>
+        </div>
+        <div class="products flex flex-col justify-center items-center ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px]"> محصولات</h2>
+          <button class="btnews text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-20">
+           <a href=""> <div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/5.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/6.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/7.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+          </div>
+        </div>
+        <div class="services flex flex-col justify-center items-center ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px]"> خدمات</h2>
+          <button class="btnews text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-20">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/8.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/9.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/10.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+          </div>
+          <div class="whoWeAre flex flex-col justify-center items-center w-[320px] ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px]"> ما کی هستیم</h2>
+          <button class="btnews my-8 text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <div class="newsItem desktop:w-[690px] flex justify-center items-center">
+            <img src="./src/image/news/Who-We-Are-infographic-png-Compressed.png" alt="" class=" w-[690px] my-14">
+          </div>
+        </div>
+        <div class="project flex flex-col justify-center items-center ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px]"> پروژه ها</h2>
+          <button class="btnews text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-20">
+           <a href=""> <div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/5.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/6.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/7.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
+          </div>
+        </div>
+        <div class="success flex flex-col justify-center items-center ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px] mt-14"> داستان موفقیت ها</h2>
+          <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-10">
+           <img src="./src/image/news/Samsung-CT-appreciation-NEW-4.jpg" alt="" class="mobile:w-[385px] desktop:w-[472px] desktop:h-[395px]">
+           <img src="./src/image/news/Hyundei-appreciation-spelling-fixed-3.jpg" alt="" class="mobile:w-[385px] desktop:w-[472px] desktop:h-[395px]">
+          </div>
+        </div>
+         <div class="locations flex flex-col justify-center items-center w-[320px] ">
+          <h2 class="text-[#141414] text-[40px] font-bold h-[100px]">لوکیشن </h2>
+          <button class="btnews mb- text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px]  ">contact us</button>
+         <a href=""> <div class="newsItem flex flex-col justify-center items-center">
+            <img src="./src/image/news/UAE-FLAG-Smaller.jpg" alt="" class="newsItemImg mt-10">   
+          </div></a>
+        </div>
+        </div>
+       </div>
+      <!-- endmaster -->
 
       <!-- footer -->
        <footer class="w-full flex mobile:h-[830px] desktop:h-[585px] bg-no-repeat bg-transparent mt-20 relative">
@@ -153,5 +260,24 @@
     </div>
     <!--endmain  -->
     <script src="./src/main.js"></script>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      effect: "fade",
+      autoplay: {
+        delay:5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
   </body>
 </html>
