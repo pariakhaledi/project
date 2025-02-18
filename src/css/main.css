@@ -50,6 +50,9 @@ footer {
       margin-left: 20px;
       margin-right: 20px;
   }
+  .newcolor{
+    color:#333;
+  }
   }
 .swiper-button-next::after,
 .swiper-button-prev::after {
