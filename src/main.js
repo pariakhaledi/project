@@ -18,3 +18,20 @@ menubar.addEventListener("click", function () {
   }
 });
 
+// aboutpage
+let icons = document.querySelectorAll(".icon");
+let aboutHiddens = document.querySelectorAll(".aboutHidden");
+
+icons.forEach((icon, index) => {
+  icon.addEventListener("click", function () {
+    if (aboutHiddens[index].classList.contains("hidden")) {
+      aboutHiddens[index].classList.remove("hidden");
+      icon.textContent = "-";
+    } else {
+      aboutHiddens[index].classList.add("hidden");
+      icon.textContent = "+";
+    }
+  });
+});
+
+// endaboutpage 

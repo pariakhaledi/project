@@ -1,12 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-
 @theme {
   --breakpoint-mobile: 340px;
   --breakpoint-desktop: 1024px;
   --color-greencolor: #00960c;
-  --color-hoverbg:#E3E3E3;
+  --color-hoverbg: #e3e3e3;
+  --color-textgray:#666;
 }
 @font-face {
   font-family: iransans;
@@ -14,6 +14,7 @@
   src: url(../fonts/IRANSansWeb-Light.woff);
   src: url(../fonts/IRANSansWeb-Light.woff2);
 }
+/* footer */
 footer {
   background-image: linear-gradient(
     186deg,
@@ -29,53 +30,131 @@ footer {
     }
   }
 }
-.slider{
+/* endfooter */
+/* about */
+.aboutHeader {
+  background-image: url(../image/about/1.jpg);
+  .aboutHeader1 {
+    background-image: url(../svg/footerbackground.svg);
+    background-size: 100% 250px;
+  }
+}
+.values{
+  background-image: linear-gradient(180deg, #ffffff 0%, #F2F2FA 50%) !important;
+}
+/* endabout */
+/* contactus */
+.contactHeader{
+  background-image:url(../image/contact-us/background.jpg);
+  .contactHeader1 {
+    background-image: url(../svg/footerbackground.svg);
+    background-size: 100% 250px;
+  }
+}
+/* endcontactus */
+/* missions */
+.mHeader{
+  background-image: url(../image/missions/1.jpg);
+}
+.parallax{
+  background-image: url(../image/missions/2.jpg);
+}
+.parallax2{
+  background-image: url(../image/missions/4.jpg);
+}
+
+/* endmissions */
+.slider {
   .swiper {
-      width: 100%;
-      height: 100%;
-    }
+    width: 100%;
+    height: 100%;
+  }
 
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-    }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-      color: white;
-      margin-left: 20px;
-      margin-right: 20px;
+  .swiper-slide img {
+    display: block;
+    width: 100%;
   }
-  .newcolor{
-    color:#333;
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
   }
+  .newcolor {
+    color: #333;
   }
+}
 .swiper-button-next::after,
 .swiper-button-prev::after {
-    font-size: 25px !important;
-    font-weight: bold !important;
+  font-size: 25px !important;
+  font-weight: bold !important;
 }
 .swiper-pagination-bullet-active {
-    background-color: white !important; 
-    opacity: 0.7;
+  background-color: white !important;
+  opacity: 0.7;
 }
 /* shadow */
-.btslider{
-      &:hover{
-        box-shadow: 0px 2px 32px 9px rgba(255, 255, 255, 0.35)
-      }
-}
-.btnews{
-      box-shadow: 0px 2px 32px 9px rgba(36, 181, 127, 0.47);
-  &:hover{
-        box-shadow: 0px 2px 32px 9px rgba(36, 181, 127, 0.57);
+.btslider {
+  &:hover {
+    box-shadow: 0px 2px 32px 9px rgba(255, 255, 255, 0.35);
   }
 }
-.newsItemImg{
+.btnews {
+  box-shadow: 0px 2px 32px 9px rgba(36, 181, 127, 0.47);
+  &:hover {
+    box-shadow: 0px 2px 32px 9px rgba(36, 181, 127, 0.57);
+  }
+}
+.newsItemImg {
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
+}
+.aboutContent{
+  box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.23)!important;
+}
+.shadoww{
+      box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+}
+.textbox{
+  box-shadow: 0px 2px 70px 0px rgba(110,130,208,0.18);
+}
+.downloadbt{
+  box-shadow: 0px 2px 30px 0px rgba(110,130,208,0.14);
+}
+.email,
+.operation,
+.location,
+.call{
+  box-shadow: 0px 2px 70px 0px rgba(110,130,208,0.18);
+}
+.happyCall{
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.38);
+}
+.missionimg{
       box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
 }
 /* endshadow */
+.values{
+  direction: ltr;
+  .ourvalues{
+    direction: rtl;
+  }
+}
+/* animation */
+ /* missions */
+  @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+ /* endmissions */
+/* endanimation */
