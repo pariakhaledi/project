@@ -64,6 +64,28 @@ footer {
 }
 
 /* endmissions */
+/* honors */
+.hHeader{
+  background-image: url(../image/honors/1.jpg);
+}
+.parallax3{
+  background-image: url(../image/honors/5.jpg);
+}
+.parallax4{
+  background-image: url(../image/honors/6.jpg);
+}
+/* endhonors */
+/* products */
+.pHeader{
+  background-image: url(../image/products/1.jpg);
+}
+.parallax5{
+  background-image: url(../image/products/2.jpg);
+}
+.parallax6{
+  background-image: url(../image/products/3.jpg);
+}
+/* endproducts */
 .slider {
   .swiper {
     width: 100%;
@@ -137,6 +159,9 @@ footer {
 .missionimg{
       box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
 }
+.hItem{
+      box-shadow: 10px 17px 18px 0px rgba(0, 0, 0, 0.3);
+}
 /* endshadow */
 .values{
   direction: ltr;
@@ -157,4 +182,34 @@ footer {
         }
     }
  /* endmissions */
+
+ @keyframes zoom-in {
+  0% {
+    transform: scale(0.5); 
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1); 
+    opacity: 1; 
+  }
+}
+
+.animate-zoom-in {
+  animation: zoom-in 1.5s ease-out forwards; 
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-30%); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1; 
+  }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.5s ease-out forwards; 
+}
 /* endanimation */

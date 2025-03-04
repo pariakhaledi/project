@@ -34,4 +34,21 @@ icons.forEach((icon, index) => {
   });
 });
 
-// endaboutpage 
+// endaboutpage
+
+// topbutton
+ const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+
+ window.addEventListener("scroll", () => {
+   if (window.scrollY > 300) {
+     scrollTopBtn.classList.add("opacity-100", "scale-100");
+   } else {
+     scrollTopBtn.classList.remove("opacity-100", "scale-100");
+   }
+ });
+
+ scrollTopBtn.addEventListener("click", () => {
+   window.scrollTo({ top: 0, behavior: "smooth" });
+ });
+// endtopbutton

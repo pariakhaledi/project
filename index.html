@@ -14,7 +14,7 @@
     >
       <!-- header -->
       <header
-        class="mobile:w-full mobile:h-[78px] desktop:h-[58px] bg-white/60 flex justify-between z-1000 desktop:fixed mobile:absolute top-0"
+        class="mobile:w-full mobile:h-[78px] desktop:h-[58px] bg-white/60 flex justify-between z-1000 desktop:fixed top-0 mobile:absolute"
       >
         <div class="right flex items-center mr-16 gap-7">
           <!--mobilemenu -->
@@ -26,64 +26,69 @@
             />
           </button>
           <div
-            class="submenu transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[78px] right-[17%] w-[70%]  bg-white/70 border-t-4 border-greencolor hidden desktop:hidden"
+            class="submenu transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[78px] right-[17%] w-[70%]  bg-white/60 border-t-4 border-greencolor hidden desktop:hidden"
           >
             <ul class="menu text-[#141414] w-full p-6 [&_li>*]:rounded-none font-['iransans']">
-              <li class="h-[50px]"><a src="index.html" class="border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300">صفحه اصلی</a></li>
-              <li class="h-[50px]"><a src="./project.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300">پروژه ها <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
-              <li class="h-[50px]"><a src="honors.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> افتخارات <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
-              <li class="h-[50px]"><a src="missions.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> ماموریت ها <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
-              <li class="h-[50px]"><a src="about.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> درباره ما <img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a></li>
-              <li class="h-[50px]"><a src="./contactus.html" class="border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-300"> تماس با ما</a></li>
+              <a href="index.html" class="border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-400/40"><li class="h-[25px]">صفحه اصلی</li></a>
+              <a href="project.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-400/40"><li class="h-[25px]">پروژه ها </li><img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a>
+              <a href="honors.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-400/40"><li class="h-[25px]">افتخارات </li><img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a>
+              <a href="products.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-400/40"><li class="h-[25px]"> محصولات </li><img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a>
+              <a href="missions.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-400/40"><li class="h-[25px]">ماموریت ها </li><img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a>
+              <a href="about.html" class="flex items-center justify-between border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-400/40"><li class="h-[25px]"> درباره ما </li><img src="./src/svg/plus.svg" alt="" class="w-[10px] h-[10px]"></a>
+              <a href="contactus.html" class="border-b-1 border-gray-300 p-2 hover:text-[#666] hover:bg-gray-400/40"><li class="h-[25px]">تماس با ما </li></a>
             </ul>
           </div>
           <!-- endmobilemenu -->
-          <img
-            src="./src/svg/search.svg"
-            alt="search"
-            class="search mobile:w-[22px] mobile:h-[22px]"
-          />
           <!-- desktopmenu -->
           <div class="item mobile:hidden desktop:flex font-['iransans'] gap-6 text-[#141414]">
-            <a href="index.html" class="hover:opacity-80 text-greencolor">صفحه اصلی</a>
+            <a href="index.html" class=" text-greencolor hover:opacity-70">صفحه اصلی</a>
             <div class="group font-['iransans']">
               <a href="project.html" class="hover:text-[#333131] flex items-center gap-1 group">پروژه ها <img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
-            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[205px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[160px] w-[230px]  bg-white border-t-4 border-greencolor group-hover:scale-y-100">
               <ul class="menu text-[#141414] w-full px-3 py-1">
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 3</a></li>
             </div>
           </div>
             <div class="group font-['iransans']">
               <a href="honors.html" class="hover:text-[#333131] flex items-center gap-1 group">افتخارات<img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
-            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[305px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[260px] w-[230px]  bg-white border-t-4 border-greencolor group-hover:scale-y-100">
               <ul class="menu text-[#141414] w-full px-3 py-1">
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 3</a></li>
+            </div>
+          </div>
+          <div class="group font-['iransans']">
+              <a href="products.html" class="hover:text-[#333131] flex items-center gap-1 group">محصولات <img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[360px] w-[230px]  bg-white border-t-4 border-greencolor group-hover:scale-y-100">
+              <ul class="menu text-[#141414] w-full px-3 py-1">
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 3</a></li>
             </div>
           </div>
             <div class="group font-['iransans']">
               <a href="missions.html" class="hover:text-[#333131] flex items-center gap-1 group">ماموریت ها <img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
-            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[400px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[460px] w-[230px]  bg-white border-t-4 border-greencolor group-hover:scale-y-100">
               <ul class="menu text-[#141414] w-full px-3 py-1">
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 4</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 5</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 6</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 7</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 3</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 4</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 5</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 6</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 7</a></li>
             </div>
           </div>
            <div class="group font-['iransans']">
               <a href="about.html" class="hover:text-[#333131] flex items-center gap-1 group"> درباره ما <img src="./src/svg/submenu.svg" alt="" class="w-[15px] h-[15px] group-hover:opacity-50"></a>
-            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[518px] w-[230px]  bg-[#d9d9d9] border-t-4 border-greencolor group-hover:scale-y-100">
+            <div class="transform origin-top scale-y-0 transition-all duration-400 ease-in-out absolute top-[58px] right-[580px] w-[230px]  bg-white border-t-4 border-greencolor group-hover:scale-y-100">
               <ul class="menu text-[#141414] w-full px-3 py-1">
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 1</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 2</a></li>
-              <li class="h-[40px]"><a class="border-b-1 border-gray-300 p-2 hover:text-greencolor">آیتم 3</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 1</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 2</a></li>
+              <li class="h-[40px]"><a class="hover:bg-gray-200/30 p-2 hover:text-greencolor">آیتم 3</a></li>
             </div>
           </div>
             <a href="contactus.html" class="hover:text-[#333131]">تماس با ما</a>
@@ -101,6 +106,12 @@
         </div>
       </header>
       <!-- endheader -->
+      <!-- topbutton -->
+         <button id="scrollTopBtn"
+    class="fixed bottom-18 right-0 w-10 h-10 bg-[#000000]/40 text-white text-lg rounded-tl-md rounded-bl-md flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 scale-0 cursor-pointer z-100">
+    <img src="./src/svg/topbt.svg" alt="" class="z-110 w-8 h-8">
+  </button>
+      <!-- endtopbutton -->
       <!-- slider -->
        <div class="group slider w-full h-[94vh] flex justify-center relative">
         <div class="swiper mySwiper ">
@@ -122,53 +133,53 @@
     <div class="swiper-button-prev !hidden group-hover:!block"></div>
     <div class="swiper-pagination"></div>
   </div>
-  <button class="btslider text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] absolute bottom-14 z-200 text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+  <button class="btslider animate-zoom-in text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] absolute bottom-14 z-200 text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
        </div>
       <!-- endslider -->
       <!-- master -->
        <div class="master w-full flex flex-col gap-32 justify-center items-center mt-14 font-['iransans'] ">
         <div class="latestnews flex flex-col justify-center items-center w-[320px] ">
           <h2 class="text-[#141414] text-[40px] font-bold h-[100px]">آخرین اخبار</h2>
-          <button class="btnews my-8 text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <button class="btnews animate-zoom-in my-8 text-[18px] rounded-[4px] bg-white w-[175px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[185px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
          <a href=""> <div class="newsItem flex flex-col justify-center items-center hover:bg-hoverbg">
-            <img src="./src/image/news/1.jpg" alt="" class="newsItemImg w-[210px] h-[150px]">
+            <img src="./src/image/news/1.jpg" alt="" class="newsItemImg w-[210px] h-[150px] animate-slide-down">
             <h3 class="text-[#141414] mb-2 mt-6 font-bold">لورم ایپسوم متن</h3>
             <p class="text-[#141414] text-center">لورم با  ایپسوم متن ساختگی با <span class="text-[#ff9900]">تولید</span> سادگی نامفهوم از صنعت</p>
           </div></a>
         </div>
         <div class="choosUs flex flex-col justify-center items-center ">
           <h2 class="text-[#141414] text-[40px] font-bold h-[100px]">چرا ما را انتخاب کنید ؟</h2>
-          <button class="btnews text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <button class="btnews animate-zoom-in text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
           <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-20">
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/2.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/2.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down motion-safe:opacity-100 motion-safe:translate-y-0 motion-safe:scale-100">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/3.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/3.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down motion-safe:opacity-100 motion-safe:translate-y-0 motion-safe:scale-100">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/4.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/4.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down motion-safe:opacity-100 motion-safe:translate-y-0 motion-safe:scale-100">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
           </div>
         </div>
         <div class="products flex flex-col justify-center items-center ">
           <h2 class="text-[#141414] text-[40px] font-bold h-[100px]"> محصولات</h2>
-          <button class="btnews text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <button class="btnews animate-zoom-in text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
           <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-20">
-           <a href=""> <div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/5.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+           <a href=""> <div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/5.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/6.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/6.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/7.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/7.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
           </div>
         </div>
         <div class="services flex flex-col justify-center items-center ">
           <h2 class="text-[#141414] text-[40px] font-bold h-[100px]"> خدمات</h2>
-          <button class="btnews text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
+          <button class="btnews animate-zoom-in text-[18px] rounded-[4px] bg-white w-[240px] h-[45px] text-[#141414] hover:text-[#008950] hover:w-[250px] hover:h-[50px] transition-all duration-300 ease-in-out hover:text-[20px] ">contact us</button>
           <div class="item mobile:flex-col desktop:flex-row flex gap-16 justify-center items-center mt-20">
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/8.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/8.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/9.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/9.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
-            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/10.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover">
+            <a href=""><div class="hover:bg-hoverbg w-[310px] flex flex-col justify-center items-center"><img src="./src/image/news/10.jpg" alt="" class="newsItemImg w-[260px] h-[215px] object-cover animate-slide-down">
             <p class="text-[#141414] text-center mb-3 mt-6">لورم ایپسوم متن</p></div></a>
           </div>
           <div class="whoWeAre flex flex-col justify-center items-center w-[320px] ">
